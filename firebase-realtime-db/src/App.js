@@ -7,7 +7,7 @@ function App() {
   const [text, setText] = useState("")
 
   function save() {
-    set(ref(database, 'test/current'), { message: text })
+    let newRef = set(ref(database, 'test/current'),{message:text})
   }
 
   useEffect(() => {
